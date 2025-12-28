@@ -50,6 +50,12 @@ jobs:
         env:
           JEKYLL_ENV: "production"
 
+      - name: Copy CNAME file
+        run: |
+          if [ -f CNAME ]; then
+            cp CNAME "_site${{ steps.pages.outputs.base_path }}/CNAME"
+          fi
+
       - name: Test site
         run: |
           bundle exec htmlproofer _site \
