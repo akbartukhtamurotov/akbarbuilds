@@ -149,7 +149,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "https://akbarbuilds.uz"
+baseurl: "" # leave this as empty string for root domain
 
 # ------------ The following options are not recommended to be modified ------------------
 
